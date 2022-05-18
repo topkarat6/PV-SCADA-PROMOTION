@@ -1,0 +1,12 @@
+<svg id="sun" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.625" height="40.62" viewBox="0 0 40.625 40.62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eaeaea;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Elips_4_kopya" data-name="Elips 4 kopya" class="cls-1" d="M343.308,3572.91A20.305,20.305,0,1,1,323,3593.22,20.307,20.307,0,0,1,343.308,3572.91Z" transform="translate(-323 -3572.91)"/>
+  <image id="sun_2_" data-name="sun (2)" x="10" y="10.09" width="20" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABfklEQVQ4jZXUPUhWYRQH8F+m0YcgSF9DEEQJghC4KA4hSFPWINjQFESDYOjiooOLgYKIU2M4OQi6uFbQEghBiFs22NTH0FYUqcUDZ3i9PPe+9/3DhYf/Oc//OV/3qIkHeIX2Zu5tNQX70FPHv+gwiDMZv984xL+M7Saulj2QLqxl+C4M41SBH4k7j8oEn+II65lMimL9+IvX6CwTTBjFbJyH8CGiSN9PTKMjavq8SqiIxyHyDYuYwdvg3rQilHALf/Ai07i7YVtuRXABPyrsKeKvuJwzvsRu1OpJcHtYrRC8Fqmn+bwUQ/8e79LkX8QVHDd0qy3mrgxHwafOnw7R7ihFFqk+XyoE5/E9AqmF3ohiKeM8gF9NSpLFZNTpI+bwDBvB7bQidAcTcb6Hzw2DnaJewTncwFQzsbEo7GaBb8/M40A8sl611pLDVoY/j9sZfjzuPCwTvI+zGT6l9in+4SJSpNcbU2nEdslDF2JPFjdOwokG1d3Y+ziI4S8H/gMO6Uotmr8KDgAAAABJRU5ErkJggg=="/>
+</svg>

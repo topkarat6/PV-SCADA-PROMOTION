@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrapt css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/cef457a7d0.js" crossorigin="anonymous"></script>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!--custom css-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!--Swiper css-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--Animate Css-->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!--Wow Js-->
+    <script src="assets/js/wow.js"></script>
+    <title>PV SCADA</title>
+</head>
+
+<body>
+    <div id="header" class="header">
+        <div id="navigation-main" class="navigation-wrapper">
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+            <i onclick="closenav()" class="fas fa-bars"></i>
+            <div id="navigation" class="navigation">
+                <i id="fa-times" onclick="closenav()" class="fas fa-times"></i>
+                <div class="top-menu">
+                    <ul>
+                        <li>
+                            <a class="active menu-item" href="#header">ANASAYFA</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item" href="#genel-ozellikler">BİZ</a>
+                        </li>
+                        <li>
+                            <a class="menu-item" href="#sayac-okuma">ÖZELLİKLER</a>
+                        </li>
+                        <li>
+                            <a class="menu-item" href="#sss">SSS</a>
+                        </li>
+                        <li>
+                            <a class="menu-item" href="#referanslar">REFERANSLAR</a>
+                        </li>
+                        <li>
+                            <a class="menu-item" href="#iletisim">İLETİŞİM</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-menu">
+                    <div class="bottom-menu-icons">
+                        <a href="#">@pvscada</a>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="bottom-menubuttons">
+                        <div class="select-wrapper">
+                            <select name="language" id="language">
+                                    <option value="TR">TR</option>
+                                    <option value="EN">EN</option>
+                                </select>
+                        </div>
+                        <a href="#" class="login-button">GİRİŞ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-wrapper">
+
+            <div id="1" class="panel  active-item " style="background-image:url(assets/img/scada.jpg);">
+                <div class="vertical-contant">
+                    <div class="vertical-text">
+                        <span class="bold">SCADA</span> KONTROL MERKEZİ
+                    </div>
+                    <img src="assets/img/panel-beyaz.png" alt="">
+                </div>
+                <div class="horizontal-content">
+                    <div class="horizontal-content-title">
+                        <img src="assets/img/panel-beyaz.png" alt=""> SCADA KONTROL MERKEZİ
+                    </div>
+                    <div class="horizontal-slogan">
+                        Elektrik dağıtıcı şirketi tarafından istenilen GES’ lerin analog ve dijital değerlerine ilişkin haberleşme altyapısını sizlerin hizmetine sunuyoruz.
+                    </div>
+                    <div class="horizontal-descripton">
+                        <span class="bold">Bu hizmet sayesinde aşağıdaki özelliklere sahip olabileceksiniz;</span>
+                        <ul>
+                            <li> Analog değerlerin kontrolü (Kalite kaydedici, loss of main rölesi gibi analog değerler gerçek zamanlı olarak kontrol edilebilecektir.)</li>
+                            <li>Bugün, bu ay, bu yıl üretilen enerji miktarlarlarının hesaplanması ve kazanç değerlerinin kıyaslaması imkanını sağlar.</li>
+                            <li>Tesiste kullanılan motorlu şalter, kesici ve trafo koruma hücresinin uzaktan açma ve kapatma kontrolünü sağlar.</li>
+                            <li>Dijital sinyaller sayesinde tesisde oluşabilecek her türlü açma ve kapatma sinyallerini kontrolü sağlanılabilir.</li>
+                            <li>Kesici, ayrıcı, toprak ve motorlu şalter konum pozisyon bilgi kontrolünü sağlar.</li>
+                            <li>Tesisde oluşabilecek hatalara karşı anlık bilgi takibi.</li>
+                            <li>Haberleşme hatalarına karşı uyarı bilgi sistemi.</li>
+                            <li>Anlık üretilen güç takibi.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="2" class="panel" style="background-image:url(assets/img/inverter.jpg);">
+                <div class="vertical-contant">
+                    <div class="vertical-text">
+                        <span class="bold">İNVERTER</span> İZLEME SİSTEMİ
+                    </div>
+                    <img src="assets/img/kare-beyaz.png" alt="">
+                </div>
+                <div class="horizontal-content">
+                    <div class="horizontal-content-title">
+                        <img src="assets/img/kare-beyaz.png" alt=""> İNVERTER İZLEME SİSTEMİ
+                    </div>
+                    <div class="horizontal-slogan">
+                        Elektrik dağıtıcı şirketi tarafından istenilen GES’ lerin analog ve dijital değerlerine ilişkin haberleşme altyapısını sizlerin hizmetine sunuyoruz.
+                    </div>
+                    <div class="horizontal-descripton">
+                        <span class="bold">Bu hizmet sayesinde aşağıdaki özelliklere sahip olabileceksiniz;</span>
+                        <ul>
+                            <li> Analog değerlerin kontrolü (Kalite kaydedici, loss of main rölesi gibi analog değerler gerçek zamanlı olarak kontrol edilebilecektir.)</li>
+                            <li>Bugün, bu ay, bu yıl üretilen enerji miktarlarlarının hesaplanması ve kazanç değerlerinin kıyaslaması imkanını sağlar.</li>
+                            <li>Tesiste kullanılan motorlu şalter, kesici ve trafo koruma hücresinin uzaktan açma ve kapatma kontrolünü sağlar.</li>
+                            <li>Dijital sinyaller sayesinde tesisde oluşabilecek her türlü açma ve kapatma sinyallerini kontrolü sağlanılabilir.</li>
+                            <li>Kesici, ayrıcı, toprak ve motorlu şalter konum pozisyon bilgi kontrolünü sağlar.</li>
+                            <li>Tesisde oluşabilecek hatalara karşı anlık bilgi takibi.</li>
+                            <li>Haberleşme hatalarına karşı uyarı bilgi sistemi.</li>
+                            <li>Anlık üretilen güç takibi.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="3" class="panel" style="background-image:url(assets/img/sayac.jpg);">
+                <div class="vertical-contant">
+                    <div class="vertical-text">
+                        UZAKTAN
+                        <span class="bold">SAYAÇ</span> OKUMA
+                    </div>
+                    <img src="assets/img/rapor-beyaz.png" alt="">
+                </div>
+                <div class="horizontal-content">
+                    <div class="horizontal-content-title">
+                        <img src="assets/img/rapor-beyaz.png" alt=""> UZAKTAN SAYAÇ OKUMA
+                    </div>
+                    <div class="horizontal-slogan">
+                        Elektrik dağıtıcı şirketi tarafından istenilen GES’ lerin analog ve dijital değerlerine ilişkin haberleşme altyapısını sizlerin hizmetine sunuyoruz.
+                    </div>
+                    <div class="horizontal-descripton">
+                        <span class="bold">Bu hizmet sayesinde aşağıdaki özelliklere sahip olabileceksiniz;</span>
+                        <ul>
+                            <li> Analog değerlerin kontrolü (Kalite kaydedici, loss of main rölesi gibi analog değerler gerçek zamanlı olarak kontrol edilebilecektir.)</li>
+                            <li>Bugün, bu ay, bu yıl üretilen enerji miktarlarlarının hesaplanması ve kazanç değerlerinin kıyaslaması imkanını sağlar.</li>
+                            <li>Tesiste kullanılan motorlu şalter, kesici ve trafo koruma hücresinin uzaktan açma ve kapatma kontrolünü sağlar.</li>
+                            <li>Dijital sinyaller sayesinde tesisde oluşabilecek her türlü açma ve kapatma sinyallerini kontrolü sağlanılabilir.</li>
+                            <li>Kesici, ayrıcı, toprak ve motorlu şalter konum pozisyon bilgi kontrolünü sağlar.</li>
+                            <li>Tesisde oluşabilecek hatalara karşı anlık bilgi takibi.</li>
+                            <li>Haberleşme hatalarına karşı uyarı bilgi sistemi.</li>
+                            <li>Anlık üretilen güç takibi.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="4" class="panel" style="background-image:url(assets/img/rapor.jpg);">
+                <div class="vertical-contant">
+                    <div class="vertical-text">
+                        ANLIK RAPOR OLUŞTURMA SİSTEMİ
+                    </div>
+                    <img src="assets/img/list-beyaz.png" alt="">
+                </div>
+                <div class="horizontal-content">
+                    <div class="horizontal-content-title">
+                        <img src="assets/img/list-beyaz.png" alt=""> ANLIK RAPOR OLUŞTURMA SİSTEMİ
+                    </div>
+                    <div class="horizontal-slogan">
+                        Elektrik dağıtıcı şirketi tarafından istenilen GES’ lerin analog ve dijital değerlerine ilişkin haberleşme altyapısını sizlerin hizmetine sunuyoruz.
+                    </div>
+                    <div class="horizontal-descripton">
+                        <span class="bold">Bu hizmet sayesinde aşağıdaki özelliklere sahip olabileceksiniz;</span>
+                        <ul>
+                            <li> Analog değerlerin kontrolü (Kalite kaydedici, loss of main rölesi gibi analog değerler gerçek zamanlı olarak kontrol edilebilecektir.)</li>
+                            <li>Bugün, bu ay, bu yıl üretilen enerji miktarlarlarının hesaplanması ve kazanç değerlerinin kıyaslaması imkanını sağlar.</li>
+                            <li>Tesiste kullanılan motorlu şalter, kesici ve trafo koruma hücresinin uzaktan açma ve kapatma kontrolünü sağlar.</li>
+                            <li>Dijital sinyaller sayesinde tesisde oluşabilecek her türlü açma ve kapatma sinyallerini kontrolü sağlanılabilir.</li>
+                            <li>Kesici, ayrıcı, toprak ve motorlu şalter konum pozisyon bilgi kontrolünü sağlar.</li>
+                            <li>Tesisde oluşabilecek hatalara karşı anlık bilgi takibi.</li>
+                            <li>Haberleşme hatalarına karşı uyarı bilgi sistemi.</li>
+                            <li>Anlık üretilen güç takibi.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="5" class="panel" style="background-image:url(assets/img/anlik-uyari-takip-sistemi.jpg);">
+                <div class="vertical-contant">
+                    <div class="vertical-text">
+                        ANLIK UYARI TAKİP SİSTEMİ
+                    </div>
+                    <img src="assets/img/bell-beyaz.png" alt="">
+                </div>
+                <div class="horizontal-content">
+                    <div class="horizontal-content-title">
+                        <img src="assets/img/bell-beyaz.png" alt=""> ANLIK UYARI TAKİP SİSTEMİ
+                    </div>
+                    <div class="horizontal-slogan">
+                        Elektrik dağıtıcı şirketi tarafından istenilen GES’ lerin analog ve dijital değerlerine ilişkin haberleşme altyapısını sizlerin hizmetine sunuyoruz.
+                    </div>
+                    <div class="horizontal-descripton">
+                        <span class="bold">Bu hizmet sayesinde aşağıdaki özelliklere sahip olabileceksiniz;</span>
+                        <ul>
+                            <li> Analog değerlerin kontrolü (Kalite kaydedici, loss of main rölesi gibi analog değerler gerçek zamanlı olarak kontrol edilebilecektir.)</li>
+                            <li>Bugün, bu ay, bu yıl üretilen enerji miktarlarlarının hesaplanması ve kazanç değerlerinin kıyaslaması imkanını sağlar.</li>
+                            <li>Tesiste kullanılan motorlu şalter, kesici ve trafo koruma hücresinin uzaktan açma ve kapatma kontrolünü sağlar.</li>
+                            <li>Dijital sinyaller sayesinde tesisde oluşabilecek her türlü açma ve kapatma sinyallerini kontrolü sağlanılabilir.</li>
+                            <li>Kesici, ayrıcı, toprak ve motorlu şalter konum pozisyon bilgi kontrolünü sağlar.</li>
+                            <li>Tesisde oluşabilecek hatalara karşı anlık bilgi takibi.</li>
+                            <li>Haberleşme hatalarına karşı uyarı bilgi sistemi.</li>
+                            <li>Anlık üretilen güç takibi.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div id="genel-ozellikler" class="genel-ozellikler">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="genel-ozellikler-item-1  wow animate animate__animated animate__fadeInLeftBig">
+                            <img src="assets/img/heart.png" alt="">
+                            <div class="genel-ozellikler-tite">
+                                SiSTEM VERiLERiNiN CANLI TAKiBi & PANEL AÇIP KAPATMA
+                            </div>
+                            <div class="horizontal-line"></div>
+                            <div class="genel-ozellikler-content">
+                                Panellerinizde oluşabilecek arızaları anında öğrenebilirsiniz. Bildirim olarak sistem size her arızayı anında alarm olarak verecektir. “Redesor durumları, Haberleşme Hataları, RTU Hataları, Kesici Pozisyonları, Ayrıcı Pozisyonları Toprak Pozisyonları,
+                                Role konum bilgileri” başta olmak üzere her detayı en ince ayrıntısına kadar düşündük
+                            </div>
+                            <div class="genel-ozellikler-button">
+                                İNCELE
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="genel-ozellikler-item-2 wow animate animate__animated animate__zoomIn">
+                            <img src="assets/img/fis.png" alt="">
+                            <div class="genel-ozellikler-tite">
+                                ANLIK ENERJi kW ÜRETiM TESPiTi & KIYASLAMASI
+                            </div>
+                            <div class="horizontal-line"></div>
+                            <div class="genel-ozellikler-content">
+                                Panellerinizde oluşabilecek arızaları anında öğrenebilirsiniz. Bildirim olarak sistem size her arızayı anında alarm olarak verecektir. “Redesor durumları, Haberleşme Hataları, RTU Hataları, Kesici Pozisyonları, Ayrıcı Pozisyonları Toprak Pozisyonları,
+                                Role konum bilgileri” başta olmak üzere her detayı en ince ayrıntısına kadar düşündük
+                            </div>
+                            <div class="genel-ozellikler-button">
+                                İNCELE
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="genel-ozellikler-item-3 wow animate animate__animated animate__fadeInRightBig">
+                            <img src="assets/img/rozet.png" alt="">
+                            <div class="genel-ozellikler-tite">
+                                DÜNYA’DA GÜNEŞ PANELLERi TAKiP SiSTEMiNDEKi EN iYi SiSTEM
+                            </div>
+                            <div class="horizontal-line"></div>
+                            <div class="genel-ozellikler-content">
+                                A dan Z ye kadar beklentilerinizi tamamen karşılayan ve ulaşabileceğiniz verimliliğe en fazla katkı sağlayacak yazılımı geliştirdik. Kullanan müşterilerimizin deneyimleri sizlere daha aydınlık fikirler sunacaktır. PV olarak yazılım sürümümüzü devamlı
+                                güncelliyor sistemimizi olabileceği en iyi şekline her gün bir artı daha ekliyoruz.
+                            </div>
+                            <div class="genel-ozellikler-button">
+                                İNCELE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ozellikler">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div data-wow-duration="3500ms" data-wow-iteration="infinite" class="ozellikler-title wow animate animate__animated animate__flash">
+                            HER ŞEY GÖZÜNÜZÜN ÖNÜNDE
+                            <br>
+                            <span class="bold">BİR TIK UZAĞINDA</span>
+                            <a href="#" class="ozellik-button">
+                                    TÜM ÖZELLİKLER
+                                </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ozellik-item-grey ozellik-item">
+                            <img class="img-1" src="assets/img/home-mavi.png" alt="">
+                            <img class="img-2" src="assets/img/home.png" alt="">
+                            <div class="ozellik-item-title">
+                                Dashboard
+                            </div>
+                            <div class="ozellikler-item-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non accumsan mauris. Integer a turpis rutrum, mattis nunc.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ozellik-item">
+                            <img class="img-1" src="assets/img/sun.png" alt="">
+                            <img class="img-2" src="assets/img/sun-beyaz.png" alt="">
+                            <div class="ozellik-item-title">
+                                Scada
+                            </div>
+                            <div class="ozellikler-item-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non accumsan mauris. Integer a turpis rutrum, mattis nunc.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ozellik-item">
+                            <img class="img-1" src="assets/img/panel.png" alt="">
+                            <img class="img-2" src="assets/img/panel-beyaz.png" alt="">
+                            <div class="ozellik-item-title">
+                                Solarlogger
+                            </div>
+                            <div class="ozellikler-item-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non accumsan mauris. Integer a turpis rutrum, mattis nunc.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ozellik-item ozellik-item-grey">
+                            <img class="img-1" src="assets/img/sayac.png" alt="">
+                            <img class="img-2" src="assets/img/sayac-beyaz.png" alt="">
+                            <div class="ozellik-item-title">
+                                Sayaç
+                            </div>
+                            <div class="ozellikler-item-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non accumsan mauris. Integer a turpis rutrum, mattis nunc.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ozellik-item ">
+                            <img class="img-1" src="assets/img/rapor.png" alt="">
+                            <img class="img-2" src="assets/img/rapor-beyaz.png" alt="">
+                            <div class="ozellik-item-title">
+                                Rapor
+                            </div>
+                            <div class="ozellikler-item-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non accumsan mauris. Integer a turpis rutrum, mattis nunc.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ozellik-item ozellik-item-grey">
+                            <img class="img-1" src="assets/img/megaphone.png" alt="">
+                            <img class="img-2" src="assets/img/megaphone-beyaz.png" alt="">
+                            <div class="ozellik-item-title">
+                                İhbar
+                            </div>
+                            <div class="ozellikler-item-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non accumsan mauris. Integer a turpis rutrum, mattis nunc.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sayac-okuma" class="sayac-okuma">
+            <div class="sayac-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div id="sayacc" class="sayac-img">
+                                <img src="assets/img/resim-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="owl-slider">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="sayac-title">
+                                                SAYAÇ OKUMA NEDİR?
+                                            </div>
+                                            <div class="sayac-content">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices odio in egestas fermentum. Nullam ornare egestas imperdiet. Integer sollicitudin scelerisque nisl ut dignissim. Aliquam pellentesque quis quam dapibus cursus. Nullam cursus, neque
+                                                in maximus <span class="bold"> lobortis, neque sem blandit purus, posuere ultricies lacus nisl sit amet ipsum. Curabitur pharetra dui eu urna varius,
+                                                eu fringilla lectus pharetra. Morbi ut ligula vel purus</span> laoreet vulputate sit amet faucibus nisl. Nunc mauris libero, elementum vitae venenatis vel, semper quis felis. Sed quam lectus, facilisis eget
+                                                nisi vitae, pulvinar feugiat sapien. Aenean augue urna, luctus
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="sayac-title">
+                                                SAYAÇ OKUMA NEDİR?
+                                            </div>
+                                            <div class="sayac-content">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices odio in egestas fermentum. Nullam ornare egestas imperdiet. Integer sollicitudin scelerisque nisl ut dignissim. Aliquam pellentesque quis quam dapibus cursus. Nullam cursus, neque
+                                                in maximus <span class="bold"> lobortis, neque sem blandit purus, posuere ultricies lacus nisl sit amet ipsum. Curabitur pharetra dui eu urna varius,
+                                                eu fringilla lectus pharetra. Morbi ut ligula vel purus</span> laoreet vulputate sit amet faucibus nisl. Nunc mauris libero, elementum vitae venenatis vel, semper quis felis. Sed quam lectus, facilisis eget
+                                                nisi vitae, pulvinar feugiat sapien. Aenean augue urna, luctus
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="sayac-title">
+                                                SAYAÇ OKUMA NEDİR?
+                                            </div>
+                                            <div class="sayac-content">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices odio in egestas fermentum. Nullam ornare egestas imperdiet. Integer sollicitudin scelerisque nisl ut dignissim. Aliquam pellentesque quis quam dapibus cursus. Nullam cursus, neque
+                                                in maximus <span class="bold"> lobortis, neque sem blandit purus, posuere ultricies lacus nisl sit amet ipsum. Curabitur pharetra dui eu urna varius,
+                                                eu fringilla lectus pharetra. Morbi ut ligula vel purus</span> laoreet vulputate sit amet faucibus nisl. Nunc mauris libero, elementum vitae venenatis vel, semper quis felis. Sed quam lectus, facilisis eget
+                                                nisi vitae, pulvinar feugiat sapien. Aenean augue urna, luctus
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="sayac-title">
+                                                SAYAÇ OKUMA NEDİR?
+                                            </div>
+                                            <div class="sayac-content">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices odio in egestas fermentum. Nullam ornare egestas imperdiet. Integer sollicitudin scelerisque nisl ut dignissim. Aliquam pellentesque quis quam dapibus cursus. Nullam cursus, neque
+                                                in maximus <span class="bold"> lobortis, neque sem blandit purus, posuere ultricies lacus nisl sit amet ipsum. Curabitur pharetra dui eu urna varius,
+                                                eu fringilla lectus pharetra. Morbi ut ligula vel purus</span> laoreet vulputate sit amet faucibus nisl. Nunc mauris libero, elementum vitae venenatis vel, semper quis felis. Sed quam lectus, facilisis eget
+                                                nisi vitae, pulvinar feugiat sapien. Aenean augue urna, luctus
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="sayac-title">
+                                                SAYAÇ OKUMA NEDİR?
+                                            </div>
+                                            <div class="sayac-content">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices odio in egestas fermentum. Nullam ornare egestas imperdiet. Integer sollicitudin scelerisque nisl ut dignissim. Aliquam pellentesque quis quam dapibus cursus. Nullam cursus, neque
+                                                in maximus <span class="bold"> lobortis, neque sem blandit purus, posuere ultricies lacus nisl sit amet ipsum. Curabitur pharetra dui eu urna varius,
+                                                eu fringilla lectus pharetra. Morbi ut ligula vel purus</span> laoreet vulputate sit amet faucibus nisl. Nunc mauris libero, elementum vitae venenatis vel, semper quis felis. Sed quam lectus, facilisis eget
+                                                nisi vitae, pulvinar feugiat sapien. Aenean augue urna, luctus
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev-custom">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </div>
+                                    <div class="swiper-button-next-custom">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="zorunlu-sayac">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="zorunlu-sayac-img">
+                                                <img src="assets/img/zorunlu-sayac.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="zorunlu-sayac-title">
+                                                50 kW ve üzeri elektrik üretiminde sayaçın zorunlu olduğunu biliyormuydunuz?
+                                            </div>
+                                            <div class="zorunlu-sayac-content">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices odio in egestas fermentum. Nullam ornare egestas imperdiet. Integer sollicitudin scelerisque nisl ut dignissim. Aliquam pellentesque
+                                                <span class="bold"> quis quam dapibus cursus. Nullam cursus, neque in maximus lobortis, neque sem blandit purus, posuere</span> ultricies lacus nisl sit amet ipsum. Curabitur pharetra dui eu urna varius,
+                                                eu fringilla lectus pharetra. Morbi ut ligula vel purus laoreet vulputate sit amet faucibus nisl. Nunc mauris libero, elementum vitae venenatis vel, semper quis felis. Sed quam lectus, facilisis eget nisi
+                                                vitae, pulvinar feugiat sapien. Aenean augue urna, luctus ultrices porta at, rutrum malesuada
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sss" class="why-use">
+            <div class="why-use-title">
+                NEDEN PV SCADA KULLANMALIYIM?
+            </div>
+            <div class="why-use-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2 width">
+                            <ul>
+                                <li data-set="tab-1" class="tab-button active-tab-button">
+                                    <img src="assets/img/gunes.png" alt="">
+                                    <span>Genel Kapsam</span>
+                                </li>
+                                <li data-set="tab-2" class="tab-button">
+                                    <img src="assets/img/ozellik.png" alt="">
+                                    <span>Özellikleri</span>
+                                </li>
+                                <li data-set="tab-3" class="tab-button">
+                                    <img src="assets/img/avantaj.png" alt="">
+                                    <span>Avantajları</span>
+                                </li>
+                                <li data-set="tab-4" class="tab-button">
+                                    <img src="assets/img/kolaylik.png" alt="">
+                                    <span>Kolaylıkları</span>
+                                </li>
+                                <li data-set="tab-5" class="tab-button">
+                                    <img src="assets/img/yenilik.png" alt="">
+                                    <span>Yenilikleri</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="tab-wrapper">
+                                <div id="tab-1" class="tabs active-tab">
+                                    <div class="collapse-wrapper">
+                                        <div class="collapse-item active-collapse">
+                                            <div class="collapse-title">
+                                                <div>
+                                                    PV SCADAYI KİMLER KULLANMALI?
+                                                </div>
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </div>
+                                            <div class="collapse-content">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea molestias laboriosam perferendis explicabo amet ab. Reiciendis et esse illum ut tenetur a vel sapiente quia, quibusdam earum amet ratione impedit! Lorem ipsum dolor sit, amet consectetur adipisicing
+                                                elit. Ea molestias laboriosam perferendis explicabo amet ab. Reiciendis et esse illum ut tenetur a vel sapiente quia, quibusdam earum amet ratione impedit! ratione impedit! Lorem ipsum dolor sit, amet consectetur
+                                                adipisicing elit. Ea molestias laboriosam perferendis explicabo amet ab. Reiciendis et esse illum ut tenetur a vel sapiente quia, quibusdam earum amet ratione impedit!
+                                            </div>
+                                        </div>
+                                        <div class="collapse-item">
+                                            <div class="collapse-title">
+                                                <div>
+                                                    PV SCADAYI KİMLER KULLANMALI?
+                                                </div>
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </div>
+                                            <div class="collapse-content">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea molestias laboriosam perferendis explicabo amet ab. Reiciendis et esse illum ut tenetur a vel sapiente quia, quibusdam earum amet ratione impedit! Lorem ipsum dolor sit, amet consectetur adipisicing
+                                                elit. Ea molestias laboriosam perferendis explicabo amet ab. Reiciendis et esse illum ut tenetur a vel sapiente quia, quibusdam earum amet ratione impedit!
+                                            </div>
+                                        </div>
+                                        <div class="collapse-item">
+                                            <div class="collapse-title">
+                                                <div>
+                                                    PV SCADAYI KİMLER KULLANMALI?
+                                                </div>
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </div>
+                                            <div class="collapse-content">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea molestias laboriosam perferendis explicabo amet ab. Reiciendis et esse illum ut tenetur a vel sapiente quia, quibusdam earum amet ratione impedit! Lorem ipsum dolor sit, amet consectetur adipisicing
+                                                elit. Ea molestias laboriosam perferendis explicabo amet ab. Reiciendis et esse illum ut tenetur a vel sapiente quia, quibusdam earum amet ratione impedit!
+                                            </div>
+                                        </div>
+                                        <div class="collapse-item">
+                                            <div class="collapse-title">
+                                                <div>
+                                                    PV SCADAYI KİMLER KULLANMALI?
+                                                </div>
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </div>
+                                            <div class="collapse-content">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea molestias laboriosam perferendis explicabo amet ab. Reiciendis et esse illum ut tenetur a vel sapiente quia, quibusdam earum amet ratione impedit! Lorem ipsum dolor sit, amet consectetur adipisicing
+                                                elit. Ea molestias laboriosam perferendis explicabo amet ab. Reiciendis et esse illum ut tenetur a vel sapiente quia, quibusdam earum amet ratione impedit!
+                                            </div>
+                                        </div>
+                                        <div class="collapse-item">
+                                            <div class="collapse-title">
+                                                <div>
+                                                    PV SCADAYI KİMLER KULLANMALI?
+                                                </div>
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </div>
+                                            <div class="collapse-content">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea molestias laboriosam perferendis explicabo amet ab. Reiciendis et esse illum ut tenetur a vel sapiente quia, quibusdam earum amet ratione impedit! Lorem ipsum dolor sit, amet consectetur adipisicing
+                                                elit. Ea molestias laboriosam perferendis explicabo amet ab. Reiciendis et esse illum ut tenetur a vel sapiente quia, quibusdam earum amet ratione impedit!
+                                            </div>
+                                        </div>
+                                        <div class="collapse-item">
+                                            <div class="collapse-title">
+                                                <div>
+                                                    PV SCADAYI KİMLER KULLANMALI?
+                                                </div>
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </div>
+                                            <div class="collapse-content">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea molestias laboriosam perferendis explicabo amet ab. Reiciendis et esse illum ut tenetur a vel sapiente quia, quibusdam earum amet ratione impedit! Lorem ipsum dolor sit, amet consectetur adipisicing
+                                                elit. Ea molestias laboriosam perferendis explicabo amet ab. Reiciendis et esse illum ut tenetur a vel sapiente quia, quibusdam earum amet ratione impedit!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs" id="tab-2">
+                                    <div class="why-us-property">
+                                        <div class="why-us-property-title">
+                                            Özellikleri
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, praesentium.
+                                            </li>
+                                            <li>
+                                                Lorem ipsum dolor sit amet.
+                                            </li>
+                                            <li>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi autem quo nihil voluptatum maxime perspiciatis ducimus optio expedita ipsam deleniti.
+                                            </li>
+                                            <li>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </li>
+                                            <li>
+                                                Lorem ipsum dolor sit.
+                                            </li>
+                                            <li>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus eius consequuntur, ea quibusdam numquam animi temporibus officia tempore possimus in et tenetur culpa suscipit pariatur dolorem beatae nam eveniet. Molestias!
+                                            </li>
+                                            <li>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla accusamus error quibusdam.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tabs" id="tab-3">
+                                    tab-3
+                                </div>
+                                <div class="tabs" id="tab-4">
+                                    tab-4
+                                </div>
+                                <div class="tabs" id="tab-5">
+                                    tab-5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="referanslar" class="timeline">
+            <div class="timeline-wrapper">
+                <div class="timeline-title">
+                    <span>
+                    BERABERLİĞİMİZ 
+                </span>
+                    <div>
+                        NASIL BAŞLIYOR
+                    </div>
+                </div>
+                <div class="timeline-content-wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="timeline-item">
+                                    <img data-wow-delay="1s" class="arrow wow animate animate__animated animate__zoomInUp" src="assets/img/arrow.png" alt="">
+                                    <div data-wow-delay="0s" class="timeline-item-img wow animate animate__animated animate__zoomInLeft">
+                                        <img src="assets/img/one.png" alt="">
+                                    </div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-content-title">
+                                            BU SANTRALE Mİ SAHİPSİNİZ?
+                                        </div>
+                                        <div class="timeline-description">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quia voluptatibus voluptates fuga, culpa fugit consectetur autem assumenda quas adipisci?
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="timeline-item">
+                                    <img data-wow-delay="3s" class="arrow wow animate animate__animated animate__zoomInUp" src="assets/img/arrow.png" alt="">
+                                    <div data-wow-delay="2s" class="timeline-item-img timeline-item-img wow animate animate__animated animate__zoomInDown">
+                                        <img src="assets/img/two.png" alt="">
+                                    </div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-content-title">
+                                            TESİS KEŞFİ
+                                        </div>
+                                        <div class="timeline-description">
+                                            Lorem ipsum dolor sit, amet consectetur pudiandae quia voluptatibus voluptates fuga, culpa fugitnda quas adipisci?
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="timeline-item">
+                                    <div data-wow-delay="4s" class="timeline-item-img timeline-item-img wow animate animate__animated animate__zoomInRight">
+                                        <img src="assets/img/three.png" alt="">
+                                    </div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-content-title">
+                                            KEŞİF & KURULUM
+                                        </div>
+                                        <div class="timeline-description">
+                                            ae quia voluptatibus voluptates fuga, culpa fugit consectetur autem assumenda quas adipisci?
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-project-count">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="first-count">
+                                    <div class="first-count-title">
+                                        1 Mn kW
+                                    </div>
+                                    <div class="first-count-content">
+                                        Toplamda 1 Milyon kW lık bir enerji takibinin yürütüldüğü PV Sistemlerinde her iş yolunda ve tüm alarmlar zamanında çalıyor. Solar sistemlerinde anlık takibin mimarıyız.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="second-count">
+                                    <div class="first-count-title">
+                                        +
+                                        <span data-purecounter-duration="3" data-purecounter-end="100" class="purecounter">100</span>
+                                    </div>
+                                    <div class="first-count-content">
+                                        ‘den fazla tesis için aktif olarak çalışan sistemimiz hergün binlerce veriyi anlık olarak sunuyor ve yapılan müdehaleleri ileterek kolaylık sağlıyor.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="iletisim" class="contact">
+            <div class="contact-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-left">
+                                <div class="contact-title">
+                                    <div>Hazırsanız</div><span>başlayalım.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-right">
+                                <div class="contact-title-right">
+                                    <div>Demo Talebi</div> <span>Tanışma ve iştirak başlangıcı</span>
+                                </div>
+                                <form action="#" method="post" name="contact" class="contact-form">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="İsim Soyisim">
+                                        <input type="text" placeholder="Telefonunuz">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" placeholder="E-mail adresi">
+                                        <input type="text" placeholder="Şirket / Kurum adı">
+                                    </div>
+                                    <input class="message" type="text" placeholder="Mesajınız">
+                                    <div class="sozlesme">
+                                        <input class="check-onay" type="checkbox">
+                                        <span>
+                                            Geliştirmiş olduğunuz pv panel enerjisi takip sistemini yakından tanımak istediğimi
+                                            kabul ediyor, en kısa sürede iletişim bilgilerime dönüş yapılmasını kabul ediyorum.
+                                        </span>
+                                    </div>
+                                    <a href="#" class="contact-button">GÖNDER</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <div class="social-media-title">
+                TAKİP EDİN
+            </div>
+            <div class="bottom-bg">
+            </div>
+            <div class="post-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2 col-6">
+                            <img src="assets/img/sosyal-1.jpg" alt="">
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <img src="assets/img/sosyal-2.jpg" alt="">
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <img src="assets/img/sosyal-3.jpg" alt="">
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <img src="assets/img/sosyal-4.jpg" alt="">
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <img src="assets/img/sosyal-5.jpg" alt="">
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <img src="assets/img/sosyal-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-media-links">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="icon-wrapper">
+                                <i class="fab fa-facebook-f"></i>
+                                <div>
+                                    @pvscada
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="icon-wrapper">
+                                <i class="fab fa-instagram"></i>
+                                <div>
+                                    @pvscada
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="icon-wrapper">
+                                <i class="fab fa-youtube"></i>
+                                <div>
+                                    @pvscada
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="icon-wrapper">
+                                <i class="fab fa-twitter"></i>
+                                <div>
+                                    @pvscada
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="icon-wrapper">
+                                <i class="fab fa-linkedin"></i>
+                                <div>
+                                    @pvscada
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="footer-logo wow animate animate__animated animate__fadeInLeftBig">
+                            <img src="assets/img/logo-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="footer-midle-section">
+                            <div class="slogan">
+                                <div>SINIRSIZ TEMİZ ENERJİ</div>
+                                <span>ARTIK KONTROL ALTINDA</span>
+                            </div>
+                            <div class="footer-nav">
+                                <ul>
+                                    <div class="row">
+                                        <li class="col-md-2 ">
+                                            <a href="#header">ANASAYFA</a>
+                                        </li>
+                                        <li class="col-md-2 ">
+                                            <a href="#genel-ozellikler">BİZ</a>
+                                        </li>
+                                        <li class="col-md-2 ">
+                                            <a href="#sayac-okuma">ÖZELLİKLER</a>
+                                        </li>
+                                        <li class="col-md-2 ">
+                                            <a href="#sss">SSS</a>
+                                        </li>
+                                        <li class="col-md-2 ">
+                                            <a href="#referanslar">REFERANSLAR</a>
+                                        </li>
+                                        <li class="col-md-2 ">
+                                            <a href="#iletisim">İLETİŞİM</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="address">
+                            <ul>
+                                <li>
+                                    @pvscada <span>@</span>
+                                </li>
+                                <li>
+                                    <a href="tel:+903323121505">+90 332 312 15 05</a> <span>T</span>
+                                </li>
+                                <li>
+                                    <a href="tel:+903322480467">+90 332 248 04 67</a> <span>F</span>
+                                </li>
+                                <li>
+                                    <a href="mailto:pv@pvscada.com">pv@pvscada.com</a> <span>M</span>
+                                </li>
+                                <li>
+                                    Horozluhan mh. Şenyurt sk. <br> No: 10 Pk:42120 Konya/TURKEY <span>A</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Swiper js-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+</body>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/purecounter.js"></script>
+
+</html>
